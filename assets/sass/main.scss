@@ -76,7 +76,7 @@ html{
     height: 90vh;
     background-image: url(../img/19362688.svg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     
     
     &__dark-container{
@@ -293,6 +293,36 @@ html{
     .section-objectifs{
         padding-left: 4rem !important;
         padding-right: 4rem !important;
+    }
+    .header{
+        height: 50vh;
+
+        &__infos{
+            color: #fff;
+            // background-color: red;
+            width: 80%;
+            margin:  auto;
+            text-align: center;
+            
+            &-name{
+                font-size: 3rem;
+                margin-bottom: 2.2rem;
+            }
+            &-text{
+                font-size: 1.8rem;
+                margin-bottom: 4rem;
+            }
+            & .btn-contact{
+                background-color: #0137EF;
+                padding-left: 1.4rem;
+                padding-right: 1.4rem;
+                padding-top: 1.1rem;
+                padding-bottom: 1.1rem;
+                color: #fff;
+                font-size: 1.3rem;
+                border-radius: .4rem;
+            }
+        }
     }
 
 }
