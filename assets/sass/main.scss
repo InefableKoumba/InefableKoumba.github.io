@@ -76,6 +76,7 @@ html{
     height: 90vh;
     background-image: url(../img/19362688.svg);
     background-size: cover;
+    background-position: top;
     
     
     &__dark-container{
@@ -141,7 +142,7 @@ html{
 }
 .sub-title{
     color: #0137EF;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .gray{
     background-color: #f5f5f5;
