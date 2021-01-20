@@ -36,10 +36,13 @@ a {
 }
 
 .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10vh;
+  height: 8vh;
   background-color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -51,7 +54,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: solid 0.5rem var(--primary-color);
+  border-bottom: solid 0.2rem var(--primary-color);
   text-align: center;
 }
 
@@ -152,7 +155,7 @@ a {
 }
 
 .hero {
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-size: cover;
 }
@@ -386,6 +389,7 @@ section.songs-list .songs-container {
 }
 
 section.songs-list .songs-container .box {
+  background-color: #f5f5f5;
   margin-right: 1rem;
   border: solid #0d558156 1px;
   -ms-flex-preferred-size: 24%;
@@ -691,16 +695,17 @@ a {
 }
 
 .contact-btn a {
-  /* background-color: #CE0506; */
+  font-size: 700;
+  border: solid 2px #0D5481;
   color: #0D5481;
-  font-size: 1.3rem;
-  padding: 1.3rem;
+  font-size: 1.6rem;
+  padding: 2rem;
   border-radius: .8rem;
-  border: solid #0D5481 2px;
-  font-weight: 600;
+  -webkit-transition: all .4s;
   transition: all .4s;
 }
-.contact-btn a:hover{
+
+.contact-btn a:hover {
   background-color: #0D5481;
   color: #fff;
 }
