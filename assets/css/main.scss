@@ -259,14 +259,17 @@ a {
     width: 100%;
     background: #0D5481;
     color: #fff;
-    position: absolute;
-    transform: translateX(-100%);
+    position: fixed;
+    // transform: translateX(-800px);
+    // transform-origin: -100%;
+    // transform: translateX(-100px);
+    left: -100%;
     top: 0;
     border: none;
     // padding-top: 2rem;
-    z-index: 4;
+    z-index: 11;
     // display: none;
-    transition: transform .2s ease;
+    // transition: transform .2s ease;
 
 
     & .close-btn {
@@ -822,7 +825,7 @@ svg:hover {
 
 .show {
     // display: block !important;
-    transform: translateX(.1%);
+    transform: translateX(0);
 }
 
 .blue-font {

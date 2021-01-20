@@ -5,12 +5,24 @@ const mobileNavaBar = document.querySelector('.mobile-navbar')
 const toggle_btn = document.querySelector('#toggle_btn')
 const closeBtn = document.querySelector('.close-btn')
 const mobileNavBar = document.querySelector('.mobile-navbar__links')
+
 navToggleBtn.addEventListener('click', (e)=>{
-    if (screen.width < 1075) mobileNavaBar.classList.toggle('show')
-    
+    if (screen.width < 1075){
+        //  mobileNavaBar.classList.toggle('show');
+        console.log(mobileNavBar.clientWidth)
+         anime({
+            targets: mobileNavaBar,
+            translateX: mobileNavBar.clientWidth
+          });
+    }
 })
+
 closeBtn.addEventListener('click', (e)=>{
-    if (screen.width < 1075) mobileNavaBar.classList.remove('show')
+    // if (screen.width < 1075) mobileNavaBar.classList.remove('show')
+    anime({
+        targets: mobileNavaBar,
+        translateX: -mobileNavBar.clientWidth
+      });
     
 })
 // document.addEventListener("scroll",(e)=>{
@@ -23,3 +35,4 @@ closeBtn.addEventListener('click', (e)=>{
         
 //     }
 // })
+

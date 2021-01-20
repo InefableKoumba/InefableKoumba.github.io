@@ -253,16 +253,11 @@ a {
   width: 100%;
   background: #0D5481;
   color: #fff;
-  position: absolute;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  position: fixed;
+  left: -100%;
   top: 0;
   border: none;
-  z-index: 4;
-  -webkit-transition: -webkit-transform .2s ease;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
+  z-index: 11;
 }
 
 .mobile-navbar .close-btn {
@@ -755,8 +750,8 @@ svg:hover {
 }
 
 .show {
-  -webkit-transform: translateX(0.1%);
-          transform: translateX(0.1%);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .blue-font {
