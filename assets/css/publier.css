@@ -1,3 +1,12 @@
+.navbar__links-item {
+  height: 10vh;
+  margin-right: 2.5rem;
+}
+
+.navbar__links-item a {
+  height: inherit;
+}
+
 form {
   width: 55vw;
   margin: 0 auto;

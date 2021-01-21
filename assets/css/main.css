@@ -37,6 +37,8 @@ a {
 
 .navbar {
   position: fixed;
+  -webkit-box-shadow: 0 0.5rem 4rem 0.6rem rgba(0, 0, 0, 0.685);
+          box-shadow: 0 0.5rem 4rem 0.6rem rgba(0, 0, 0, 0.685);
   width: 100%;
   z-index: 10;
   display: -webkit-box;
@@ -47,10 +49,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding-left: 4rem;
   padding-right: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -116,23 +119,29 @@ a {
   font-weight: 700;
 }
 
-.navbar__btn a {
+.navbar__btn a.navbar__btn-connexion,
+.navbar__btn a.navbar__btn-subscription {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: var(--primary-color);
   padding: 1rem;
   font-weight: 700;
 }
 
 .navbar__btn a.navbar__btn-connexion {
-  margin-right: -2rem;
-  padding-right: 2rem;
+  margin-right: -1.5rem;
+  padding-right: 2.2rem;
+  padding-left: 1.4rem;
+  border-radius: 4rem 0 0 4rem;
+  text-transform: uppercase;
 }
 
 .navbar__btn a.navbar__btn-subscription {
-  margin-left: -2rem;
+  text-transform: uppercase;
+  margin-left: -1.5rem;
   padding-left: 2rem;
-  padding-left: 2rem;
+  padding-right: 1.4rem;
+  border-radius: 0 4rem 4rem 0;
 }
 
 .navbar__btn-user-icon {
@@ -246,9 +255,13 @@ a {
   background-color: #CE0506;
   margin-top: 5rem;
   font-size: 1.9rem;
+  -webkit-box-shadow: 1rem 0.5rem 4rem 0.1rem rgba(0, 0, 0, 0.61);
+          box-shadow: 1rem 0.5rem 4rem 0.1rem rgba(0, 0, 0, 0.61);
 }
 
 .mobile-navbar {
+  font-family: "Segoe UI";
+  font-weight: 500;
   min-height: 100vh;
   width: 100%;
   background: #0D5481;
@@ -467,9 +480,9 @@ section.songs-list .songs-container .box__body-row-1 .song-title-container .song
 }
 
 section.songs-list .songs-container .box__body-row-1 .vote-btn {
-  background-color: #0D5481;
+  background-color: #10a80a;
   border-radius: 50%;
-  padding: 1.6rem;
+  padding: 1.1rem;
   display: inline-block;
   position: absolute;
   right: 2rem;
@@ -487,7 +500,7 @@ section.songs-list .songs-container .box__body-row-1 .vote-btn svg {
 }
 
 section.songs-list .songs-container .box__body-row-1 .vote-btn:hover {
-  background-color: #2089ca;
+  background-color: #38f527;
 }
 
 section.songs-list .songs-container .box__body-row-2 {
@@ -535,11 +548,12 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 .green-bubble-mobile-btn {
   display: none !important;
   position: absolute !important;
-  top: -5rem !important;
+  top: 1rem !important;
   left: 47%;
   background: none;
   border: none;
   outline: none;
+  z-index: 20 !important;
 }
 
 .green-bubble-mobile-btn .green-bubble-mobile-img {
@@ -549,6 +563,7 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
 @media screen and (max-width: 1075px) {
   .green-bubble-mobile-btn {
     display: block !important;
+    z-index: 20 !important;
   }
   .navbar__links, .navbar__btn {
     display: none;
@@ -678,6 +693,11 @@ section.songs-list .songs-container .box__body-row-2 a.btn-more {
   .dark-container .title {
     font-size: 3rem !important;
   }
+}
+
+.crown-icon {
+  height: 2rem;
+  width: 2rem;
 }
 
 a {
