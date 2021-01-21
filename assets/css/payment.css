@@ -1,7 +1,7 @@
 input {
   font-size: 1.6rem !important;
   padding: 1rem !important;
-  border-radius: 1rem !important;
+  border-radius: .4rem !important;
 }
 
 .card-header {
@@ -20,7 +20,7 @@ input {
 }
 
 .card-header .rounded {
-  border-radius: 1rem !important;
+  border-radius: .4rem !important;
 }
 
 .nav-pills .nav-link {
