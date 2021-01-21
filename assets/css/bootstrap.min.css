@@ -6707,7 +6707,7 @@ a.close.disabled {
     }
 }
 
-.tooltip {
+.tooltipf {
     position: absolute;
     z-index: 1070;
     display: block;
