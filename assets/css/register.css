@@ -6,6 +6,34 @@ body {
   background-image: url(../img/c-d-x-PDX_a_82obo-unsplashrhh.jpg);
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+
+a {
+  text-decoration: none !important;
+  color: rgba(21, 78, 163, 0.76);
+}
+
+.back-btn {
+  position: absolute;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  /* width: 4rem; */
+  left: 3rem;
+  top: 3rem;
+  text-align: center;
+  color: black;
+  padding: .8rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 50%;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.back-btn:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .page-container {
@@ -27,17 +55,30 @@ body {
   margin: 2rem;
 }
 
-.page-container input, .page-container select {
+.page-container input,
+.page-container select {
   color: #000 !important;
   border-radius: .2rem;
 }
 
+@media screen and (max-width: 1260px) {
+  .page-container .title {
+    font-size: 3rem !important;
+  }
+}
+
 @media screen and (max-width: 900px) {
+  .back-btn {
+    left: .8rem;
+    top: .5rem;
+    padding: .4rem .8rem;
+  }
   .page-container {
-    padding: 1.8rem 2rem;
+    padding: 1.8rem .5rem;
   }
   .page-container .title {
     font-size: 2rem !important;
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=register.css.map */

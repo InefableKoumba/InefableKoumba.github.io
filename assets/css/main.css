@@ -406,6 +406,8 @@ section.songs-list .songs-container .box {
   border-radius: 3rem;
   padding-bottom: 1rem;
   margin-bottom: 2.4rem;
+  -webkit-box-shadow: 0.03rem 0.08rem 0.8rem 0.01rem rgba(0, 0, 0, 0.685);
+          box-shadow: 0.03rem 0.08rem 0.8rem 0.01rem rgba(0, 0, 0, 0.685);
 }
 
 section.songs-list .songs-container .box__header {

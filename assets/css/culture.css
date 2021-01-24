@@ -16,11 +16,16 @@
   -ms-flex-preferred-size: 60% !important;
       flex-basis: 60% !important;
   margin: 1.5rem 0;
+  -webkit-box-shadow: 1rem 1rem 2rem 0.1rem rgba(0, 0, 0, 0.336);
+          box-shadow: 1rem 1rem 2rem 0.1rem rgba(0, 0, 0, 0.336);
+  outline: none;
+  border: none;
 }
 
 .video-container-item .video-title {
   font-size: 1.6rem;
   margin: .8rem 0;
+  padding: 1rem;
 }
 
 .video-container-item video {

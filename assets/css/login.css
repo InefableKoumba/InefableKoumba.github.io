@@ -1,6 +1,44 @@
+html {
+  font-size: 16px !important;
+}
+
 a {
   text-decoration: none !important;
   color: #fff !important;
+}
+
+body {
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  /* width: 4rem; */
+  left: 3rem;
+  top: 3rem;
+  text-align: center;
+  color: black !important;
+  padding: .8rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.966);
+  border-radius: 50%;
+  -webkit-transition: all .35s;
+  transition: all .35s;
+}
+
+.back-btn:hover {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+@media screen and (max-width: 900px) {
+  .back-btn {
+    left: .8rem !important;
+    top: .5rem !important;
+    padding: .4rem .8rem;
+  }
 }
 
 .page-container {
@@ -62,7 +100,7 @@ a {
 }
 
 .page-container .right-part .title {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-family: "Ravie";
   text-align: center;
 }
@@ -103,6 +141,12 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page-container .title {
+    font-size: 2rem !important;
   }
 }
 
